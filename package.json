@@ -1,0 +1,21 @@
+{
+    "name": "eritbh-theme",
+    "displayName": "eritbh-theme",
+    "description": "",
+    "version": "0.0.1",
+    "engines": {
+        "vscode": "^1.68.0"
+    },
+    "categories": [
+        "Themes"
+    ],
+    "contributes": {
+        "themes": [
+            {
+                "label": "eritbh's theme",
+                "uiTheme": "vs-dark",
+                "path": "./themes/eritbh's theme-color-theme.json"
+            }
+        ]
+    }
+}
