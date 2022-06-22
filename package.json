@@ -12,7 +12,7 @@
     "contributes": {
         "themes": [
             {
-                "label": "eritbh's theme",
+                "label": "Erin's Theme Dark",
                 "uiTheme": "vs-dark",
                 "path": "./themes/eritbh's theme-color-theme.json"
             }
