@@ -1,8 +1,14 @@
 {
     "name": "eritbh-theme",
-    "displayName": "eritbh-theme",
-    "description": "",
     "version": "0.0.1",
+    "displayName": "Erin's Theme",
+    "description": "Erin's personal VS Code color theme",
+    "galleryBanner": {
+        "color": "#7e7edd",
+        "theme": "light"
+    },
+    "license": "MIT",
+    "repository": "github:eritbh/eritbh-theme",
     "engines": {
         "vscode": "^1.68.0"
     },
