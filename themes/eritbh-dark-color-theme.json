@@ -368,9 +368,9 @@
 		{
 			"name": "Language Variables, some Keywords",
 			"scope": [
-				"variable.language",
-				"keyword"
-				// e.g. in JS this covers super(), this, arguments
+				"keyword",
+				"variable.language", // e.g. in JS this covers super(), this, arguments
+				// "support.type.object.module", // module and exports "globals" in JS
 			],
 			"settings": {
 				"fontStyle": "italic",
@@ -562,7 +562,7 @@
 			}
 		},
 		{
-			"name": "Git added gutter",
+			"name": "Git changed gutter",
 			"scope": [
 				"markup.changed",
 			],
@@ -617,7 +617,7 @@
 				"string",
 				"constant.other.symbol",
 				"constant.other.key",
-				"entity.other.inherited-class",
+				// "entity.other.inherited-class",
 				"markup.heading",
 				"meta.group.braces.curly constant.other.object.key.js string.unquoted.label.js"
 			],
