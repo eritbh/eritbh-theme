@@ -619,7 +619,6 @@
 				"constant.other.key",
 				// "entity.other.inherited-class",
 				"markup.heading",
-				"meta.group.braces.curly constant.other.object.key.js string.unquoted.label.js"
 			],
 			"settings": {
 				"foreground": "#def48b"
