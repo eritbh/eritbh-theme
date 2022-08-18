@@ -118,6 +118,7 @@
 
 		"editor.selectionHighlightBackground": "#00000000",
 		"editor.selectionHighlightBorder": "#efe8e4bb",
+		// #endregion
 
 		"editorBracketMatch.background": "#00000000",
 		"editorBracketMatch.border": "#efe8e4bb",
