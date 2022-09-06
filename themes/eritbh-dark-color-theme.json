@@ -329,61 +329,58 @@
 	},
 	"tokenColors": [
 		{
-			"name": "Variables",
+			"name": "Embedded expressions don't inherit styles from other contexts",
 			"scope": [
-				"variable",
-				"string constant.other.placeholder"
+				"meta.embedded"
 			],
 			"settings": {
-				"foreground": "#efe8e4" // TODO
+				"foreground": "#efe8e4bb", // same as editor.foreground
+				"fontStyle": "",
 			}
 		},
 		{
-			"name": "Colors",
+			"name": "Variables",
 			"scope": [
-				"constant.other.color",
+				"variable",
 			],
 			"settings": {
-				"foreground": "#efe8e4"
-			}
+				"foreground": "#efe8e4", // TODO
+			},
 		},
 		{
 			"name": "Invalid",
 			"scope": [
 				"invalid",
-				"invalid.illegal"
-			],
-			"settings": {
-				"foreground": "#FF5370"
-			}
-		},
-		{
-			"name": "Weird Keywords",
-			"scope": [
-				"keyword"
 			],
 			"settings": {
 				"foreground": "#FF5370",
-			}
+			},
 		},
 		{
-			"name": "Language Variables, some Keywords",
+			"name": "Language Variables",
 			"scope": [
-				"keyword",
 				"variable.language", // e.g. in JS this covers super(), this, arguments
-				// "support.type.object.module", // module and exports "globals" in JS
 			],
 			"settings": {
 				"fontStyle": "italic",
-				"foreground": "#c48bf4" // TODO
+				"foreground": "#c48bf4", // TODO
+			},
+		},
+		{
+			"name": "Macros",
+			"scope": [
+				"entity.name.function.macro",
+			],
+			"settings": {
+				"foreground": "#c48bf4",
 			}
 		},
 		{
-			"name": "Control Flow, Storage",
+			"name": "Generic Keywords (control flow, etc)",
 			"scope": [
-				"keyword.control",
+				"keyword",
 				"storage.type",
-				"storage.modifier"
+				"storage.modifier",
 			],
 			"settings": {
 				"foreground": "#aa8bf4",
@@ -391,16 +388,39 @@
 			}
 		},
 		{
-			"name": "Symbolic Operator Keywords",
+			"name": "Operators",
 			"scope": [
+				"keyword.operator",
+			],
+			"settings": {
+				"foreground": "#c48bf4",
+				"fontStyle": "italic"
+			}
+		},
+		{
+			"name": "Symbolic Operators",
+			"scope": [
+				// "keyword.operator",
 				"keyword.operator.arithmetic",
+				"keyword.operator.math",
 				"keyword.operator.assignment",
 				"keyword.operator.logical",
 				"keyword.operator.comparison",
+				"keyword.operator.relational",
+				"keyword.operator.ternary",
+				"keyword.operator.namespace",
+				"keyword.operator.access",
+				"keyword.operator.key-value",
+				"keyword.operator.arrow",
+
+				"meta.selector keyword.operator",
+
+				"punctuation.accessor",
+				"punctuation.semi",
 			],
 			"settings": {
 				"foreground": "#efe8e4bb",
-				"fontStyle": ""
+				"fontStyle": "",
 			}
 		},
 
@@ -441,7 +461,7 @@
 				"comment.block.documentation entity.name.type"
 			],
 			"settings": {
-				"foreground": "#f6a2ddbb"
+				"foreground": "#f6a2ddbb",
 			}
 		},
 		{
@@ -475,7 +495,7 @@
 		// #endregion
 
 		{
-			"name": "Less important import/export keywords in JS",
+			"name": "Supporting keywords used in JS import/export",
 			"scope": [
 				"source.js meta.import keyword.control.as",
 				"source.js meta.import keyword.control.from",
@@ -523,26 +543,6 @@
 				"foreground": "#efe8e4"
 			}
 		},
-		{
-			"name": "Tag",
-			"scope": [
-				"entity.name.tag",
-				"meta.tag.sgml",
-			],
-			"settings": {
-				"foreground": "#f07178"
-			}
-		},
-		// {
-		// 	"scope": [
-		// 		"meta.object-literal.key",
-		// 	],
-		// 	"settings": {
-		// 		"foreground": "#0F0",
-		// 		"fontStyle": "bold"
-		// 	}
-		// },
-
 		// #region Inserted/deleted/modified markup
 		{
 			"name": "Git deleted gutter",
@@ -604,9 +604,9 @@
 				"support.constant",
 				"constant.character",
 				"constant.escape",
+				"constant.other",
 				// "variable.parameter",
 				"keyword.other.unit",
-				"keyword.other"
 			],
 			"settings": {
 				"foreground": "#f4aa8b"
@@ -626,10 +626,11 @@
 			}
 		},
 		{
-			"name": "Class, Support",
+			"name": "Classes, Namespaces, Support",
 			"scope": [
 				// "entity.name",
 				"entity.name.type",
+				"entity.name.namespace",
 				"entity.other.inherited-class",
 				"support.type",
 				"support.class",
@@ -639,7 +640,8 @@
 				"support.type.sys-types",
 			],
 			"settings": {
-				"foreground": "#f6a2dd"
+				"foreground": "#f6a2dd",
+				"fontStyle": "",
 			}
 		},
 		{
@@ -652,7 +654,7 @@
 			}
 		},
 		{
-			"name": "CSS Class and Support",
+			"name": "CSS property names",
 			"scope": [
 				"source.css support.type.property-name",
 				"source.sass support.type.property-name",
@@ -662,7 +664,7 @@
 				"source.postcss support.type.property-name"
 			],
 			"settings": {
-				"foreground": "#b5f8f0"
+				"foreground": "#efe8e4"
 			}
 		},
 		{
@@ -696,65 +698,143 @@
 				"foreground": "#82AAFF" // TODO
 			}
 		},
+
+
+		// #region HTML
 		{
-			"name": "Attributes",
+			"name": "HTML Tag",
 			"scope": [
-				"entity.other.attribute-name"
+				"entity.name.tag",
+				"meta.tag.sgml",
 			],
 			"settings": {
-				"foreground": "#C792EA" // TODO
+				"foreground": "#f6a2dd"
 			}
 		},
 		{
-			// TODO ???
 			"name": "HTML Attributes",
 			"scope": [
-				"text.html.basic entity.other.attribute-name.html",
-				"text.html.basic entity.other.attribute-name"
+				"entity.other.attribute-name",
 			],
 			"settings": {
-				"fontStyle": "italic",
-				"foreground": "#FFCB6B"
+				"foreground": "#bac7f8",
 			}
 		},
+		{
+			"name": "HTML Tag Punctuation",
+			"scope": [
+				"punctuation.definition.tag.begin.html",
+				"punctuation.definition.tag.end.html",
+			],
+			"settings": {
+				"foreground": "#efe8e488",
+			},
+		},
+		// #endregion
 
 		// #region CSS
 		{
-			"name": "CSS Classes",
+			"name": "CSS Class selectors",
 			"scope": [
 				"entity.other.attribute-name.class"
 			],
 			"settings": {
-				"foreground": "#FFCB6B"
+				"foreground": "#bac7f8",
 			}
 		},
 		{
-			"name": "CSS ID's",
+			"name": "CSS ID selectors",
 			"scope": [
-				"source.sass keyword.control"
+				"entity.other.attribute-name.id"
 			],
 			"settings": {
-				"foreground": "#82AAFF"
+				"foreground": "#def48b"
+			}
+		},
+		{
+			"scope": [
+				"meta.attribute-selector",
+				"meta.attribute-selector keyword.operator",
+			],
+			"settings": {
+				"foreground": "#bac7f888",
 			}
 		},
 		// #endregion
 
+		// #region Regular expressions
 		{
 			"name": "Regular Expressions",
 			"scope": [
 				"string.regexp"
 			],
 			"settings": {
-				"foreground": "#83ebda"
+				"foreground": "#83ebda",
+			},
+		},
+		{
+			"scope": [
+				"constant.other.character-class.regexp",
+				"constant.other.character-class.set.regexp",
+			],
+			"settings": {
+				"foreground": "#f4aa8b"
+			},
+		},
+		{
+			"scope": [
+				"constant.character.escape.backslash.regexp"
+			],
+			"settings": {
+				"foreground": "#f48bde", // TODO: should be f6a2dd ?
+			},
+		},
+		{
+			"scope": [
+				"punctuation.definition.group",
+			],
+			"settings": {
+				"foreground": "#def48b",
+				// "fontStyle": "italic",
+			},
+		},
+		{
+			"scope": [
+				"punctuation.definition.group.no-capture.regexp",
+			],
+			"settings": {
+				// "foreground": "#83ebda88",
 			}
 		},
 		{
-			"name": "Escape Characters",
 			"scope": [
-				"constant.character.escape"
+				"punctuation.definition.group.regexp variable.other",
 			],
 			"settings": {
-				"foreground": "#f48bde"
+				"fontStyle": "",
+			},
+		},
+		{
+			"scope": [
+				"string.regexp keyword.operator"
+			],
+			"settings": {
+				"foreground": "#aa8bf4",
+				"fontStyle": "",
+			}
+		},
+		// #endregion
+
+		{
+			"name": "Escape Characters; String Interpolation",
+			"scope": [
+				"constant.character.escape",
+
+				"punctuation.definition.template-expression",
+				"punctuation.section.embedded",
+			],
+			"settings": {
+				"foreground": "#f6a2dd"
 			}
 		},
 		{
@@ -792,9 +872,10 @@
 
 		// #region JSON
 		{
-			"name": "JSON Key - Level 0",
+			"name": "JSON key",
 			"scope": [
-				"source.json meta.structure.dictionary.json support.type.property-name.json"
+				"support.type.property-name.json",
+				"entity.name.tag.yaml",
 			],
 			"settings": {
 				"foreground": "#bac7f8"
@@ -998,7 +1079,84 @@
 			"settings": {
 				"foreground": "#EEFFFF"
 			}
-		}
+		},
+		// #endregion
+
+		// #region Rust
+		{
+			"name": "Rust: Attributes",
+			"scope": [
+				"meta.attribute.rust",
+			],
+			"settings": {
+				"foreground": "#f4aa8b",
+			}
+		},
+		{
+			"name": "Rust: Attribute punctuation",
+			"scope": [
+				"punctuation.definition.attribute.rust",
+				"keyword.operator.attribute.inner.rust",
+				"punctuation.brackets.attribute.rust",
+				"meta.attribute.rust keyword.operator.assignment",
+				"meta.attribute.rust punctuation.comma",
+				"meta.attribute.rust punctuation.brackets.round",
+			],
+			"settings": {
+				"foreground": "#f4aa8baa",
+				"fontStyle": "",
+			}
+		},
+
+		{
+			"name": "Rust - namespaces",
+			"scope": [
+				"entity.name.namespace.rust",
+			],
+			"settings": {
+				"foreground": "#f4aa8b",
+				"fontStyle": "italic",
+			},
+		},
+		{
+			"name": "Rust: use statements",
+			"scope": [
+				"meta.use.rust",
+			],
+			"settings": {
+				"foreground": "#f4aa8b",
+				"fontStyle": "italic"
+			},
+		},
+		{
+			"scope": [
+				"meta.use.rust keyword.operator.math",
+				"meta.use.rust variable.language.self",
+			],
+			"settings": {
+				"foreground": "#efe8e4",
+				"fontStyle": "italic"
+			}
+		},
+		{
+			"scope": [
+				"meta.use.rust punctuation",
+			],
+			"settings": {
+				"foreground": "#efe8e4bb",
+				"fontStyle": "",
+			},
+		},
+		{
+			"name": "Rust: Traversed namespaces in use statements",
+			"scope": [
+				"meta.use.rust entity.name.namespace.rust",
+			],
+			"settings": {
+				"foreground": "#efe8e4bb",
+				"fontStyle": "italic",
+			}
+		},
 		// #endregion
 	]
 }
