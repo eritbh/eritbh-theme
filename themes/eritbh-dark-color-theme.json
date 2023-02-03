@@ -109,6 +109,10 @@
 		"editorGroup.border": "#1d1d1d",
 		"diffEditor.border": "#1d1d1d",
 
+		// #region Inlay hints
+		"editorInlayHint.background": "#00000000",
+		"editorInlayHint.foreground": "#cbb7dc88",
+
 		// #region Cursor and Selection
 		"editorCursor.foreground": "#efe8e4",
 		"editorCursor.background": "#1d1d1d",
