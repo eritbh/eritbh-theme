@@ -196,7 +196,9 @@
 		// #endregion
 
 		"editorGutter.foldingControlForeground": "#efe8e4",
-		"editorCodeLens.foreground": "#efe8e4", // TODO: necessary?
+
+		// text color for inline messages, e.g. inline git blame messages from extensions
+		"editorCodeLens.foreground": "#efe8e444",
 
 		// #region Panel
 		"panel.background": "#262626",
