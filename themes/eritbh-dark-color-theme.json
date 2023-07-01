@@ -418,6 +418,8 @@
 				"keyword.operator.access",
 				"keyword.operator.key-value",
 				"keyword.operator.arrow",
+				"keyword.operator.optional",
+				"keyword.operator.type",
 
 				"meta.selector keyword.operator",
 
