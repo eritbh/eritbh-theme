@@ -184,12 +184,13 @@
 		// #endregion
 
 		// #region Git file status colors
-		"gitDecoration.untrackedResourceForeground": "#7bdc95",
-		"gitDecoration.addedResourceForeground": "#7bdc95",
-		"gitDecoration.modifiedResourceForeground": "#988fe1",
-		"gitDecoration.stageModifiedResourceForeground": "#988fe1",
-		"gitDecoration.deletedResourceForeground": "#bf6f33",
-		"gitDecoration.stageDeletedResourceForeground": "#bf6f33",
+		"gitDecoration.untrackedResourceForeground": "#b5f8f0",
+		"gitDecoration.addedResourceForeground": "#b5f8f0",
+		"gitDecoration.modifiedResourceForeground": "#efe8e4",
+		"gitDecoration.stageModifiedResourceForeground": "#efe8e4",
+		"gitDecoration.renamedResourceForeground": "#988fe1",
+		"gitDecoration.deletedResourceForeground": "#efe8e488",
+		"gitDecoration.stageDeletedResourceForeground": "#efe8e488",
 		"gitDecoration.submoduleResourceForeground": "#84ecdd",
 		"gitDecoration.ignoredResourceForeground": "#efe8e488",
 		"gitDecoration.conflictingResourceForeground": "#6c6cc4",
