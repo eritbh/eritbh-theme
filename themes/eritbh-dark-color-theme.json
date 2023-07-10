@@ -175,7 +175,7 @@
 		"editorRuler.foreground": "#efe8e422",
 
 
-		"editor.foldBackground": "#20202044",
+		"editor.foldBackground": "#00000000",
 
 		// Overview Ruler (under editor scroll bar)
 		// "editorOverviewRuler.background": "#2d2d2d",
