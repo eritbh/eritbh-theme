@@ -804,17 +804,6 @@
 
 		// #region Javascript/Typescript
 		{
-			"name": "JS/TS ES7 Bind Operator",
-			"scope": [
-				"source.js constant.other.object.key string.unquoted.label",
-				"source.ts constant.other.object.key string.unquoted.label",
-			],
-			"settings": {
-				"fontStyle": "italic",
-				"foreground": "#FF5370"
-			}
-		},
-		{
 			"name": "JS/TS Supporting keywords used in import/export",
 			"scope": [
 				"source.js meta.import keyword.control.as",
