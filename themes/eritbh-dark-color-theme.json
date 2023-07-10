@@ -443,6 +443,15 @@
 				"foreground": "#cbb7dcbb"
 			}
 		},
+		{
+			"name": "Line comment defining punctuation",
+			"scope": [
+				"comment.line punctuation.definition.comment",
+			],
+			"settings": {
+				"fontStyle": "",
+			},
+		},
 
 		// #region Doc comments
 		{
