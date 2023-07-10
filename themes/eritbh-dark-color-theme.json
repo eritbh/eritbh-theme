@@ -100,7 +100,18 @@
 		"inputOption.activeBorder": "#7e7edd",
 		// #endregion
 
-		// Editor
+		// #region Error, Warning, Info
+		"errorForeground": "#e45877",
+		"list.errorForeground": "#e45877",
+		"editorError.foreground": "#e45877",
+
+		"list.warningForeground": "#e6d158",
+		"editorWarning.foreground": "#e6d158",
+
+		"editorInfo.foreground": "#84ecdd",
+		// #endregion
+
+		// #region Editor
 		"editor.foreground": "#efe8e4bb",
 		"editorWhitespace.foreground": "#efe8e444",
 		"editorLineNumber.foreground": "#efe8e488",
@@ -112,6 +123,7 @@
 		// #region Inlay hints
 		"editorInlayHint.background": "#00000000",
 		"editorInlayHint.foreground": "#cbb7dc88",
+		// #endregion
 
 		// #region Cursor and Selection
 		"editorCursor.foreground": "#efe8e4",
@@ -161,17 +173,6 @@
 		// "editorOverviewRuler.background": "#2d2d2d",
 		"editorOverviewRuler.border": "#1d1d1d",
 
-		// #region Error, Warning, Info
-		"errorForeground": "#e45877",
-		"list.errorForeground": "#e45877",
-		"editorError.foreground": "#e45877",
-
-		"list.warningForeground": "#e6d158",
-		"editorWarning.foreground": "#e6d158",
-
-		"editorInfo.foreground": "#84ecdd",
-		// #endregion
-
 		// #region Lines Added/Removed + Diff View
 		"editorGutter.modifiedBackground": "#988fe1",
 		"editorGutter.addedBackground": "#7bdc95",
@@ -200,6 +201,8 @@
 
 		// text color for inline messages, e.g. inline git blame messages from extensions
 		"editorCodeLens.foreground": "#efe8e444",
+
+		// #endregion Editor
 
 		// #region Panel
 		"panel.background": "#262626",
@@ -240,7 +243,7 @@
 		"breadcrumb.focusForeground": "#efe8e4",
 		// #endregion
 
-		// Editor group stuff
+		// #region miscellaneous - most of this is still untouched
 		"editorGroupHeader.border": "#1d1d1d",
 		"editorGroupHeader.tabsBackground": "#262626",
 		"editorGroupHeader.tabsBorder": "#1d1d1d",
@@ -310,6 +313,7 @@
 		"dropdown.background": "#262626",
 		"dropdown.foreground": "#efe8e4",
 		"dropdown.border": "#1d1d1d",
+		// #endregion
 
 		// #region Minimap colors
 		"minimapGutter.addedBackground": "#587c0c",
@@ -332,7 +336,7 @@
 		"breadcrumb.activeSelectionForeground": "#efe8e4",
 		"editorGutter.commentRangeForeground": "#efe8e488",
 		"debugExceptionWidget.background": "#262626",
-		"debugExceptionWidget.border": "#00000000"
+		"debugExceptionWidget.border": "#00000000",
 	},
 	"tokenColors": [
 		{
