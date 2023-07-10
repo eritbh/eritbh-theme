@@ -452,6 +452,147 @@
 				"fontStyle": "",
 			},
 		},
+		{
+			"name": "Punctuation Separators",
+			"scope": [
+				"punctuation.separator",
+			],
+			"settings": {
+				"foreground": "#efe8e4bb",
+			},
+		},
+		{
+			"name": "Parameter list delimiters",
+			"scope": [
+				"punctuation.definition.parameters",
+			],
+			"settings": {
+				"foreground": "#efe8e4",
+			},
+		},
+		{
+			"name": "Function, Special Method",
+			"scope": [
+				"entity.name.function",
+				// "meta.function-call",
+				"variable.function",
+				"support.function",
+				"keyword.other.special-method",
+			],
+			"settings": {
+				"foreground": "#bac7f8",
+			},
+		},
+		{
+			"name": "Other Variable, String Link",
+			"scope": [
+				"support.other.variable",
+				"string.other.link",
+			],
+			"settings": {
+				"foreground": "#f07178", // TODO ???
+			},
+		},
+		{
+			"name": "Number, Constant, Function Argument, Tag Attribute, Embedded",
+			"scope": [
+				"constant.numeric",
+				"constant.language",
+				"support.constant",
+				"constant.character",
+				"constant.escape",
+				"constant.other",
+				// "variable.parameter",
+				"keyword.other.unit",
+			],
+			"settings": {
+				"foreground": "#f4aa8b",
+			},
+		},
+		{
+			"name": "String, Symbols, Inherited Class, Markup Heading",
+			"scope": [
+				"string",
+				"constant.other.symbol",
+				"constant.other.key",
+				// "entity.other.inherited-class",
+			],
+			"settings": {
+				"foreground": "#def48b",
+			},
+		},
+		{
+			"name": "Classes, Namespaces, Support",
+			"scope": [
+				// "entity.name",
+				"entity.name.type",
+				"entity.name.namespace",
+				"entity.other.inherited-class",
+				"support.type",
+				"support.class",
+				"support.other.namespace.use.php",
+				"meta.use.php",
+				"support.other.namespace.php",
+				"support.type.sys-types",
+			],
+			"settings": {
+				"foreground": "#f6a2dd",
+				"fontStyle": "",
+			},
+		},
+		{
+			"name": "Entity Types",
+			"scope": [
+				"support.type",
+			],
+			"settings": {
+				"foreground": "#b5f8f0",
+			},
+		},
+		{
+			"name": "Sub-methods",
+			"scope": [
+				"entity.name.module.js",
+				"variable.import.parameter.js",
+				"variable.other.class.js",
+			],
+			"settings": {
+				"foreground": "#FF5370",
+			},
+		},
+		{
+			"name": "meta.method.js",
+			"scope": [
+				"meta.class-method.js entity.name.function.js",
+				"variable.function.constructor",
+			],
+			"settings": {
+				"foreground": "#82AAFF", // TODO
+			},
+		},
+		{
+			"name": "Escape Characters; String Interpolation",
+			"scope": [
+				"constant.character.escape",
+
+				"punctuation.definition.template-expression",
+				"punctuation.section.embedded",
+			],
+			"settings": {
+				"foreground": "#f6a2dd",
+			},
+		},
+		{
+			"name": "URL",
+			"scope": [
+				"*url*",
+				"*link*",
+				"*uri*",
+			],
+			"settings": {
+				"fontStyle": "underline",
+			},
+		},
 
 		// #region Doc comments
 		{
@@ -512,24 +653,6 @@
 		},
 		// #endregion
 
-		{
-			"name": "Punctuation Separators",
-			"scope": [
-				"punctuation.separator"
-			],
-			"settings": {
-				"foreground": "#efe8e4bb",
-			},
-		},
-		{
-			"name": "Parameter list delimiters",
-			"scope": [
-				"punctuation.definition.parameters"
-			],
-			"settings": {
-				"foreground": "#efe8e4",
-			},
-		},
 		// #region Inserted/deleted/modified markup
 		{
 			"name": "Git deleted gutter",
@@ -559,107 +682,69 @@
 			},
 		},
 		// #endregion
+
+		// #region Regular expressions
 		{
-			"name": "Function, Special Method",
+			"name": "Regular Expressions",
 			"scope": [
-				"entity.name.function",
-				// "meta.function-call",
-				"variable.function",
-				"support.function",
-				"keyword.other.special-method"
+				"string.regexp"
 			],
 			"settings": {
-				"foreground": "#bac7f8"
-			}
+				"foreground": "#83ebda",
+			},
 		},
 		{
-			"name": "Other Variable, String Link",
 			"scope": [
-				"support.other.variable",
-				"string.other.link"
-			],
-			"settings": {
-				"foreground": "#f07178" // TODO ???
-			}
-		},
-		{
-			"name": "Number, Constant, Function Argument, Tag Attribute, Embedded",
-			"scope": [
-				"constant.numeric",
-				"constant.language",
-				"support.constant",
-				"constant.character",
-				"constant.escape",
-				"constant.other",
-				// "variable.parameter",
-				"keyword.other.unit",
+				"constant.other.character-class.regexp",
+				"constant.other.character-class.set.regexp",
 			],
 			"settings": {
 				"foreground": "#f4aa8b"
+			},
+		},
+		{
+			"scope": [
+				"constant.character.escape.backslash.regexp"
+			],
+			"settings": {
+				"foreground": "#f48bde", // TODO: should be f6a2dd ?
+			},
+		},
+		{
+			"scope": [
+				"punctuation.definition.group",
+			],
+			"settings": {
+				"foreground": "#def48b",
+				// "fontStyle": "italic",
+			},
+		},
+		{
+			"scope": [
+				"punctuation.definition.group.no-capture.regexp",
+			],
+			"settings": {
+				// "foreground": "#83ebda88",
 			}
 		},
 		{
-			"name": "String, Symbols, Inherited Class, Markup Heading",
 			"scope": [
-				"string",
-				"constant.other.symbol",
-				"constant.other.key",
-				// "entity.other.inherited-class",
+				"punctuation.definition.group.regexp variable.other",
 			],
 			"settings": {
-				"foreground": "#def48b"
-			}
+				"fontStyle": "",
+			},
 		},
 		{
-			"name": "Classes, Namespaces, Support",
 			"scope": [
-				// "entity.name",
-				"entity.name.type",
-				"entity.name.namespace",
-				"entity.other.inherited-class",
-				"support.type",
-				"support.class",
-				"support.other.namespace.use.php",
-				"meta.use.php",
-				"support.other.namespace.php",
-				"support.type.sys-types",
+				"string.regexp keyword.operator"
 			],
 			"settings": {
-				"foreground": "#f6a2dd",
+				"foreground": "#aa8bf4",
 				"fontStyle": "",
 			}
 		},
-		{
-			"name": "Entity Types",
-			"scope": [
-				"support.type"
-			],
-			"settings": {
-				"foreground": "#b5f8f0"
-			}
-		},
-		{
-			"name": "Sub-methods",
-			"scope": [
-				"entity.name.module.js",
-				"variable.import.parameter.js",
-				"variable.other.class.js"
-			],
-			"settings": {
-				"foreground": "#FF5370"
-			}
-		},
-		{
-			"name": "meta.method.js",
-			"scope": [
-				"meta.class-method.js entity.name.function.js",
-				"variable.function.constructor"
-			],
-			"settings": {
-				"foreground": "#82AAFF" // TODO
-			}
-		},
-
+		// #endregion
 
 		// #region HTML
 		{
@@ -738,69 +823,6 @@
 		},
 		// #endregion
 
-		// #region Regular expressions
-		{
-			"name": "Regular Expressions",
-			"scope": [
-				"string.regexp"
-			],
-			"settings": {
-				"foreground": "#83ebda",
-			},
-		},
-		{
-			"scope": [
-				"constant.other.character-class.regexp",
-				"constant.other.character-class.set.regexp",
-			],
-			"settings": {
-				"foreground": "#f4aa8b"
-			},
-		},
-		{
-			"scope": [
-				"constant.character.escape.backslash.regexp"
-			],
-			"settings": {
-				"foreground": "#f48bde", // TODO: should be f6a2dd ?
-			},
-		},
-		{
-			"scope": [
-				"punctuation.definition.group",
-			],
-			"settings": {
-				"foreground": "#def48b",
-				// "fontStyle": "italic",
-			},
-		},
-		{
-			"scope": [
-				"punctuation.definition.group.no-capture.regexp",
-			],
-			"settings": {
-				// "foreground": "#83ebda88",
-			}
-		},
-		{
-			"scope": [
-				"punctuation.definition.group.regexp variable.other",
-			],
-			"settings": {
-				"fontStyle": "",
-			},
-		},
-		{
-			"scope": [
-				"string.regexp keyword.operator"
-			],
-			"settings": {
-				"foreground": "#aa8bf4",
-				"fontStyle": "",
-			}
-		},
-		// #endregion
-
 		// #region Javascript/Typescript
 		{
 			"name": "JS/TS Supporting keywords used in import/export",
@@ -850,30 +872,6 @@
 			}
 		},
 		// #endregion
-
-		{
-			"name": "Escape Characters; String Interpolation",
-			"scope": [
-				"constant.character.escape",
-
-				"punctuation.definition.template-expression",
-				"punctuation.section.embedded",
-			],
-			"settings": {
-				"foreground": "#f6a2dd"
-			}
-		},
-		{
-			"name": "URL",
-			"scope": [
-				"*url*",
-				"*link*",
-				"*uri*"
-			],
-			"settings": {
-				"fontStyle": "underline"
-			}
-		},
 
 		// #region JSON
 		{
