@@ -380,7 +380,7 @@
 			],
 			"settings": {
 				"foreground": "#c48bf4",
-			}
+			},
 		},
 		{
 			"name": "Generic Keywords (control flow, etc)",
@@ -391,8 +391,8 @@
 			],
 			"settings": {
 				"foreground": "#aa8bf4",
-				"fontStyle": ""
-			}
+				"fontStyle": "",
+			},
 		},
 		{
 			"name": "Operators",
@@ -401,8 +401,8 @@
 			],
 			"settings": {
 				"foreground": "#c48bf4",
-				"fontStyle": "italic"
-			}
+				"fontStyle": "italic",
+			},
 		},
 		{
 			"name": "Symbolic Operators",
@@ -430,7 +430,7 @@
 			"settings": {
 				"foreground": "#efe8e4bb",
 				"fontStyle": "",
-			}
+			},
 		},
 
 		{
@@ -440,8 +440,8 @@
 			],
 			"settings": {
 				"fontStyle": "italic",
-				"foreground": "#cbb7dcbb"
-			}
+				"foreground": "#cbb7dcbb",
+			},
 		},
 		{
 			"name": "Line comment defining punctuation",
@@ -518,8 +518,8 @@
 				"punctuation.separator"
 			],
 			"settings": {
-				"foreground": "#efe8e4bb"
-			}
+				"foreground": "#efe8e4bb",
+			},
 		},
 		{
 			"name": "Parameter list delimiters",
@@ -527,8 +527,8 @@
 				"punctuation.definition.parameters"
 			],
 			"settings": {
-				"foreground": "#efe8e4"
-			}
+				"foreground": "#efe8e4",
+			},
 		},
 		// #region Inserted/deleted/modified markup
 		{
@@ -537,8 +537,8 @@
 				"markup.deleted",
 			],
 			"settings": {
-				"foreground": "#bf6f33"
-			}
+				"foreground": "#bf6f33",
+			},
 		},
 		{
 			"name": "Git added gutter",
@@ -546,8 +546,8 @@
 				"markup.inserted",
 			],
 			"settings": {
-				"foreground": "#7bdc95"
-			}
+				"foreground": "#7bdc95",
+			},
 		},
 		{
 			"name": "Git changed gutter",
@@ -555,11 +555,10 @@
 				"markup.changed",
 			],
 			"settings": {
-				"foreground": "#988fe1"
-			}
+				"foreground": "#988fe1",
+			},
 		},
 		// #endregion
-
 		{
 			"name": "Function, Special Method",
 			"scope": [
