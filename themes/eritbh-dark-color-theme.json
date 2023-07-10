@@ -343,7 +343,7 @@
 			"settings": {
 				"foreground": "#efe8e4bb", // same as editor.foreground
 				"fontStyle": "",
-			}
+			},
 		},
 		{
 			"name": "Variables",
@@ -351,7 +351,7 @@
 				"variable",
 			],
 			"settings": {
-				"foreground": "#efe8e4", // TODO
+				"foreground": "#efe8e4",
 			},
 		},
 		{
@@ -513,39 +513,6 @@
 		// #endregion
 
 		{
-			"name": "Supporting keywords used in JS import/export",
-			"scope": [
-				"source.js meta.import keyword.control.as",
-				"source.ts meta.import keyword.control.as",
-				"source.js meta.import keyword.control.from",
-				"source.ts meta.import keyword.control.from",
-			],
-			"settings": {
-				"fontStyle": "italic",
-			}
-		},
-		{
-			"name": "Operator, Misc",
-			"scope": [
-				// TODO this is way too general
-				// "keyword.operator",
-				"constant.other.color",
-				// "punctuation",
-				"meta.tag",
-				"punctuation.definition.tag",
-				"punctuation.separator.inheritance.php",
-				"punctuation.definition.tag.html",
-				"punctuation.definition.tag.begin.html",
-				"punctuation.definition.tag.end.html",
-				"punctuation.section.embedded",
-				"keyword.other.template",
-				"keyword.other.substitution"
-			],
-			"settings": {
-				// "foreground": "#ff00ff"
-			}
-		},
-		{
 			"name": "Punctuation Separators",
 			"scope": [
 				"punctuation.separator"
@@ -673,20 +640,6 @@
 			}
 		},
 		{
-			"name": "CSS property names",
-			"scope": [
-				"source.css support.type.property-name",
-				"source.sass support.type.property-name",
-				"source.scss support.type.property-name",
-				"source.less support.type.property-name",
-				"source.stylus support.type.property-name",
-				"source.postcss support.type.property-name"
-			],
-			"settings": {
-				"foreground": "#efe8e4"
-			}
-		},
-		{
 			"name": "Sub-methods",
 			"scope": [
 				"entity.name.module.js",
@@ -695,16 +648,6 @@
 			],
 			"settings": {
 				"foreground": "#FF5370"
-			}
-		},
-		{
-			"name": "entity.name.method.js",
-			"scope": [
-				// "entity.name.method.js"
-			],
-			"settings": {
-				"fontStyle": "italic",
-				"foreground": "#82AAFF"
 			}
 		},
 		{
@@ -753,6 +696,20 @@
 
 		// #region CSS
 		{
+			"name": "CSS property names",
+			"scope": [
+				"source.css support.type.property-name",
+				"source.sass support.type.property-name",
+				"source.scss support.type.property-name",
+				"source.less support.type.property-name",
+				"source.stylus support.type.property-name",
+				"source.postcss support.type.property-name",
+			],
+			"settings": {
+				"foreground": "#efe8e4",
+			},
+		},
+		{
 			"name": "CSS Class selectors",
 			"scope": [
 				"entity.other.attribute-name.class"
@@ -771,13 +728,14 @@
 			}
 		},
 		{
+			"name": "CSS attribute selectors",
 			"scope": [
 				"meta.attribute-selector",
 				"meta.attribute-selector keyword.operator",
 			],
 			"settings": {
 				"foreground": "#bac7f888",
-			}
+			},
 		},
 		// #endregion
 
@@ -844,6 +802,45 @@
 		},
 		// #endregion
 
+		// #region Javascript/Typescript
+		{
+			"name": "JS/TS ES7 Bind Operator",
+			"scope": [
+				"source.js constant.other.object.key string.unquoted.label",
+				"source.ts constant.other.object.key string.unquoted.label",
+			],
+			"settings": {
+				"fontStyle": "italic",
+				"foreground": "#FF5370"
+			}
+		},
+		{
+			"name": "JS/TS Supporting keywords used in import/export",
+			"scope": [
+				"source.js meta.import keyword.control.as",
+				"source.ts meta.import keyword.control.as",
+				"source.js meta.import keyword.control.from",
+				"source.ts meta.import keyword.control.from",
+			],
+			"settings": {
+				"fontStyle": "italic",
+			}
+		},
+		{
+			"name": "JS/TS Decorators",
+			"scope": [
+				"source.js tag.decorator entity.name.tag",
+				"source.ts tag.decorator entity.name.tag",
+				"source.js tag.decorator punctuation.definition.tag",
+				"source.ts tag.decorator punctuation.definition.tag",
+			],
+			"settings": {
+				"fontStyle": "italic",
+				"foreground": "#82AAFF"
+			}
+		},
+		// #endregion
+
 		// #region Typescript
 		{
 			"name": "Typescript object member declaration names",
@@ -887,30 +884,6 @@
 			],
 			"settings": {
 				"fontStyle": "underline"
-			}
-		},
-		{
-			"name": "Decorators",
-			"scope": [
-				"tag.decorator.js entity.name.tag",
-				"tag.decorator.ts entity.name.tag",
-				"tag.decorator.js punctuation.definition.tag",
-				"tag.decorator.ts punctuation.definition.tag",
-			],
-			"settings": {
-				"fontStyle": "italic",
-				"foreground": "#82AAFF"
-			}
-		},
-		{
-			"name": "ES7 Bind Operator",
-			"scope": [
-				"source.js constant.other.object.key string.unquoted.label",
-				"source.ts constant.other.object.key string.unquoted.label",
-			],
-			"settings": {
-				"fontStyle": "italic",
-				"foreground": "#FF5370"
 			}
 		},
 
