@@ -835,6 +835,28 @@
 		},
 		// #endregion
 
+		// #region Typescript
+		{
+			"name": "Typescript object member declaration names",
+			"scope": [
+				"source.ts meta.field.declaration",
+			],
+			"settings": {
+				"fontStyle": "italic"
+			}
+		},
+		{
+			"name": "Typescript as keyword styled like an operator",
+			"scope": [
+				"source.ts keyword.control.as"
+			],
+			"settings": {
+				"foreground": "#c48bf4",
+				"fontStyle": "italic",
+			}
+		},
+		// #endregion
+
 		{
 			"name": "Escape Characters; String Interpolation",
 			"scope": [
