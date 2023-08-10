@@ -411,6 +411,7 @@
 				// "keyword.operator",
 				"keyword.operator.arithmetic",
 				"keyword.operator.math",
+				"keyword.operator.bitwise",
 				"keyword.operator.assignment",
 				"keyword.operator.logical",
 				"keyword.operator.comparison",
