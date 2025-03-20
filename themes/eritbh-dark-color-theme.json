@@ -864,9 +864,10 @@
 			}
 		},
 		{
-			"name": "Typescript as keyword styled like an operator",
+			"name": "Typescript textual operator overrides",
 			"scope": [
-				"source.ts keyword.control.as"
+				"source.ts keyword.control.as",
+				"source.ts keyword.operator.type.asserts"
 			],
 			"settings": {
 				"foreground": "#c48bf4",
