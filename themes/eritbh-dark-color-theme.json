@@ -835,12 +835,24 @@
 		{
 			"name": "JS/TS Supporting keywords used in import/export",
 			"scope": [
+				// normal import syntax
+				//     import {foo as bar} from './file.js';
 				"source.js meta.import keyword.control.as",
 				"source.ts meta.import keyword.control.as",
 				"source.tsx meta.import keyword.control.as",
 				"source.js meta.import keyword.control.from",
 				"source.ts meta.import keyword.control.from",
 				"source.tsx meta.import keyword.control.from",
+				// import attributes
+				//     import data from './file.json' with {type: 'json'};
+				"source.js meta.import keyword.control.with",
+				"source.ts meta.import keyword.control.with",
+				"source.tsx meta.import keyword.control.with",
+				// import assertions (stage 2/3 version of import attributes)
+				//     import data from './file.json' assert {type: 'json'};
+				"source.js meta.import keyword.control.assert",
+				"source.ts meta.import keyword.control.assert",
+				"source.tsx meta.import keyword.control.assert",
 			],
 			"settings": {
 				"fontStyle": "italic",
