@@ -914,6 +914,19 @@
 		},
 		// #endregion JSON
 
+		// #region Lua
+		{
+			"name": "Lua textual operator overrides",
+			"scope": [
+				"source.lua keyword.operator.logical",
+			],
+			"settings": {
+				"foreground": "#c48bf4",
+				"fontStyle": "italic",
+			},
+		},
+		// #endregion
+
 		// #region Markup stuff
 		{
 			"name": "Markup - Heading",
