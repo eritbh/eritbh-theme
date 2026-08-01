@@ -12,16 +12,30 @@
 		"minimap.errorHighlight": "#e45877",
 		"statusBarItem.errorForeground": "#e45877",
 		"editorMarkerNavigationError.background": "#e45877",
+		"inputValidation.errorBorder": "#e45877",
+		"activityErrorBadge.foreground": "#e45877",
 
 		"list.warningForeground": "#e6d158",
 		"editorWarning.foreground": "#e6d158",
 		"minimap.warningHighlight": "#e6d158",
 		"statusBarItem.warningForeground": "#e6d158",
 		"editorMarkerNavigationWarning.background": "#e6d158",
+		"inputValidation.warningBorder": "#e6d158",
+		"activityWarningBadge.foreground": "#e6d158",
 
 		"editorInfo.foreground": "#84ecdd",
 		"statusBarItem.prominentForeground": "#84ecdd",
 		"editorMarkerNavigationInfo.background": "#84ecdd",
+		"inputValidation.infoBorder": "#84ecdd",
+		// #endregion
+
+		// #region Additional input validation styles
+		"inputValidation.errorBackground": "#262626",
+		"inputValidation.warningBackground": "#262626",
+		"inputValidation.infoBackground": "#262626",
+		"inputValidation.errorForeground": "#efe8e4",
+		"inputValidation.warningForeground": "#efe8e4",
+		"inputValidation.infoForeground": "#efe8e4",
 		// #endregion
 
 		// #region Activity Bar
