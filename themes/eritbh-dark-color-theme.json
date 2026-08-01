@@ -174,7 +174,6 @@
 
 		"editorRuler.foreground": "#efe8e422",
 
-
 		"editor.foldBackground": "#00000000",
 
 		// Overview Ruler (under editor scroll bar)
@@ -1022,7 +1021,8 @@
 			"settings": {
 				"foreground": "#f6a2dd"
 			}
-		},		{
+		},
+		{
 			"name": "Markdown link punctuation",
 			"scope": [
 				"meta.link punctuation.definition",
