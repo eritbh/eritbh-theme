@@ -178,13 +178,13 @@
 		"editor.wordHighlightStrongBorder": "#7e7edd",
 		"editor.wordHighlightBackground": "#00000000", // TODO ???
 		"editor.wordHighlightBorder": "#7e7edd88",
-		"editorOverviewRuler.wordHighlightStrongForeground": "#7e7edd",
+		"editorOverviewRuler.wordHighlightStrongForeground": "#7e7eddbb",
 		"editorOverviewRuler.wordHighlightForeground": "#7e7edd88",
 
 		"editorLink.activeForeground": "#7e7edd",
 
-		"editorIndentGuide.background": "#efe8e444",
-		"editorIndentGuide.activeBackground": "#7e7edd",
+		"editorIndentGuide.background1": "#efe8e444",
+		"editorIndentGuide.activeBackground1": "#7e7edd",
 
 		"editorRuler.foreground": "#efe8e422",
 
