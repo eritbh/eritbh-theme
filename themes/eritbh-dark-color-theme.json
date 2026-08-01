@@ -455,6 +455,15 @@
 			},
 		},
 		{
+			"name": "Shebang comments",
+			"scope": [
+				"comment.line.shebang",
+			],
+			"settings": {
+				"fontStyle": "",
+			},
+		},
+		{
 			"name": "Punctuation Separators",
 			"scope": [
 				"punctuation.separator",
