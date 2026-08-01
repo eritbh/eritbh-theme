@@ -1,29 +1,35 @@
 {
-    "name": "eritbh-theme",
-    "version": "1.2.6",
-    "publisher": "eritbh",
-    "displayName": "Erin's Theme",
-    "description": "Erin's personal VS Code color theme",
-    "galleryBanner": {
-        "color": "#7e7edd",
-        "theme": "light"
-    },
-    "icon": "icon.png",
-    "license": "MIT",
-    "repository": "github:eritbh/eritbh-theme",
-    "engines": {
-        "vscode": "^1.68.0"
-    },
-    "categories": [
-        "Themes"
-    ],
-    "contributes": {
-        "themes": [
-            {
-                "label": "Erin's Theme Dark",
-                "uiTheme": "vs-dark",
-                "path": "./themes/eritbh-dark-color-theme.json"
-            }
-        ]
-    }
+	"name": "eritbh-theme",
+	"version": "1.2.6",
+	"publisher": "eritbh",
+	"displayName": "Erin's Theme",
+	"description": "Erin's personal VS Code color theme",
+	"galleryBanner": {
+		"color": "#7e7edd",
+		"theme": "light"
+	},
+	"icon": "icon.png",
+	"license": "MIT",
+	"repository": "github:eritbh/eritbh-theme",
+	"engines": {
+		"vscode": "^1.68.0"
+	},
+	"categories": [
+		"Themes"
+	],
+	"contributes": {
+		"themes": [
+			{
+				"label": "Erin's Theme Dark",
+				"uiTheme": "vs-dark",
+				"path": "./themes/eritbh-dark-color-theme.json"
+			}
+		]
+	},
+	"devDependencies": {
+		"dprint": "^0.55.2"
+	},
+	"scripts": {
+		"fmt": "dprint fmt"
+	}
 }
