@@ -221,6 +221,19 @@
 		"gitDecoration.conflictingResourceForeground": "#6c6cc4",
 		// #endregion
 
+		// #region Merge markers
+		"merge.currentHeaderBackground": "#00ffc844",
+		"merge.currentContentBackground": "#00ffc822",
+		"merge.commonHeaderBackground": "#13c7e444",
+		"merge.commonContentBackground": "#13c7e422",
+		"merge.incomingHeaderBackground": "#4995ff44",
+		"merge.incomingContentBackground": "#4995ff22",
+
+		"editorOverviewRuler.currentContentForeground": "#00ffc844",
+		"editorOverviewRuler.commonContentForeground": "#13c7e444",
+		"editorOverviewRuler.incomingContentForeground": "#4995ff44",
+		// #endregion
+
 		"editorGutter.foldingControlForeground": "#efe8e4",
 
 		// text color for inline messages, e.g. inline git blame messages from extensions
@@ -233,6 +246,7 @@
 		"panel.border": "#1d1d1d",
 		"panelTitle.activeBorder": "#7e7edd",
 		"panelTitle.activeForeground": "#efe8e4",
+		"panel.dropBorder": "#efe8e4",
 		"panelTitle.inactiveForeground": "#efe8e488",
 		"badge.background": "#1d1d1d",
 		"badge.foreground": "#efe8e4",
@@ -298,12 +312,6 @@
 		"notifications.border": "#1d1d1d",
 
 		"editorMarkerNavigation.background": "#262626",
-		"merge.currentHeaderBackground": "#367366",
-		"merge.currentContentBackground": "#27403B",
-		"merge.incomingHeaderBackground": "#395F8F",
-		"merge.incomingContentBackground": "#28384B",
-		"merge.commonHeaderBackground": "#383838",
-		"merge.commonContentBackground": "#282828",
 		"editorSuggestWidget.background": "#262626",
 		"editorSuggestWidget.border": "#1d1d1d",
 		"editorSuggestWidget.foreground": "#efe8e4",
