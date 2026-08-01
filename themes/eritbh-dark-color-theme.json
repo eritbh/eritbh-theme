@@ -1110,6 +1110,20 @@
 		},
 		// #endregion
 
+		// #region Python
+		{
+			"name": "Python textual operator overrides",
+			"scope": [
+				"source.python keyword.operator.logical",
+			],
+			"settings": {
+				"foreground": "#c48bf4",
+				"fontStyle": "italic",
+			},
+		},
+
+		// #endregion
+
 		// #region Rust
 		{
 			"name": "Rust: Attributes",
