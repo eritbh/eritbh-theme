@@ -234,7 +234,7 @@
 		"editorOverviewRuler.incomingContentForeground": "#4995ff44",
 		// #endregion
 
-		"editorGutter.foldingControlForeground": "#efe8e4",
+		"editorGutter.foldingControlForeground": "#efe8e4bb",
 
 		// text color for inline messages, e.g. inline git blame messages from extensions
 		"editorCodeLens.foreground": "#efe8e444",
@@ -275,10 +275,33 @@
 		"terminal.ansiBrightYellow": "#f5f543",
 		// #endregion
 
+		// #region Debug console colors
+		"debugConsole.errorForeground": "#e45877",
+		"debugConsole.infoForeground": "#efe8e4bb",
+		"debugConsole.warningForeground": "#e6d158",
+		"debugConsole.sourceForeground": "#efe8e4bb",
+		// #endregion
+
 		// #region Breadcrumb
 		"breadcrumb.background": "#2d2d2d",
-		"breadcrumb.foreground": "#efe8e488",
+		"breadcrumb.foreground": "#efe8e4bb",
 		"breadcrumb.focusForeground": "#efe8e4",
+		// #endregion
+
+		// #region Debug action icons
+		"debugIcon.startForeground": "#0dbc79", // ansiGreen
+		"debugIcon.restartForeground": "#0dbc79",
+
+		"debugIcon.pauseForeground": "#11a8cd", // ansiCyan
+		"debugIcon.continueForeground": "#11a8cd",
+
+		"debugIcon.stepBackForeground": "#bc3fbc", // ansiMagenta
+		"debugIcon.stepOverForeground": "#bc3fbc",
+		"debugIcon.stepOutForeground": "#bc3fbc",
+		"debugIcon.stepIntoForeground": "#bc3fbc",
+
+		"debugIcon.stopForeground": "#cd3131", // ansiRed
+		"debugIcon.disconnectForeground": "#cd3131", // ansiRed
 		// #endregion
 
 		// #region miscellaneous - most of this is still untouched
